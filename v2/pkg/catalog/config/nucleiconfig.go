@@ -291,7 +291,7 @@ func init() {
 		}
 	}
 	DefaultConfig = &Config{
-		homeDir:   folderutil.HomeDirOrDefault(""),
+		homeDir:   "/tmp/nuclei",
 		configDir: ConfigDir,
 	}
 	// try to read config from file
@@ -314,7 +314,7 @@ func getDefaultConfigDir() string {
 	// Review Needed:  Earlier a dependency was used to locate home dir
 	// i.e 	"github.com/mitchellh/go-homedir" not sure if it is needed
 	// Even if such case exists it should be abstracted via below function call in utils/folder
-	homedir := folderutil.HomeDirOrDefault("")
+	homedir := "/tmp/nuclei"
 	// TBD: we should probably stick to specification and use config directories provided by distro
 	// instead of manually creating one since $HOME/.config/ is config directory of Linux desktops
 	// Ref: https://pkg.go.dev/os#UserConfigDir
