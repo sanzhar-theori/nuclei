@@ -12,7 +12,6 @@ import (
 	"github.com/projectdiscovery/gologger"
 	errorutil "github.com/projectdiscovery/utils/errors"
 	fileutil "github.com/projectdiscovery/utils/file"
-	// folderutil "github.com/projectdiscovery/utils/folder"
 )
 
 // DefaultConfig is the default nuclei configuration
